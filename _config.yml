@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Intro to DH Portfolio
-email: your-email@example.com
+title: CLS161 Frank DH Portfolio
+email: yunxing.hua@tufts.edu
 description: >- # this means to ignore newlines until "baseurl:"
 
-baseurl: "/intro-dh-portfolio-template" # CHANGE THIS! the subpath of your site, e.g. /blog
-url: "https://msaxton.github.io/" # CHANGE THIS the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "yhua03/CLS161-DH-Portfolio" # CHANGE THIS! the subpath of your site, e.g. /blog
+url: "https://github.com/yhua03" # CHANGE THIS the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:year/:month/:day/:title:output_ext
 twitter_username: 
 github_username:  
