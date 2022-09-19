@@ -22,7 +22,7 @@ title: CLS161 Frank DH Portfolio
 email: yunxing.hua@tufts.edu
 description: >- # this means to ignore newlines until "baseurl:"
 
-baseurl: "yhua03/CLS161-DH-Portfolio" # CHANGE THIS! the subpath of your site, e.g. /blog
+baseurl: "CLS161-DH-Portfolio" # CHANGE THIS! the subpath of your site, e.g. /blog
 url: "https://yhua03.github.io/" # CHANGE THIS the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:year/:month/:day/:title:output_ext
 twitter_username: 
