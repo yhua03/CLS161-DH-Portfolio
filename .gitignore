@@ -1,5 +1,4 @@
-# Created by https://www.toptal.com/developers/gitignore/api/jekyll
-# Edit at https://www.toptal.com/developers/gitignore?templates=jekyll
+.ipynb_checkpoints/
 
 ### Jekyll ###
 _site/
@@ -10,4 +9,3 @@ _site/
 .bundle/
 vendor/
 
-# End of https://www.toptal.com/developers/gitignore/api/jekyll
