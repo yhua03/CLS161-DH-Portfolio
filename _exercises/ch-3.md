@@ -4,9 +4,9 @@ title: Exercises Ch. 3
 description: Select exercises from Python Crash Course
 ---
 
-# Python Crash Course Chapter 3
+## Python Crash Course Chapter 3
 
-## 3-1. Names
+### 3-1. Names
 Store the names of a few of your friends in a list called names. Print each person’s name by accessing each element in the list, one at a time.
 
 
@@ -24,7 +24,7 @@ print(names[3])
     Etha
 
 
-## 3-2. Greetings
+### 3-2. Greetings
 Start with the list you used in Exercise 3-1, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
 
 
@@ -42,7 +42,7 @@ print(f"Hello {names[3]}, how are you doing today?")
     Hello Etha, how are you doing today?
 
 
-## 3-3. Your Own List
+### 3-3. Your Own List
 Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 
 
@@ -60,7 +60,7 @@ print(f"At some point in my life, I would love to own a {modes_of_transportation
     At some point in my life, I would love to own a boat
 
 
-## 3-4. Guest List
+### 3-4. Guest List
 If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 
 
@@ -78,7 +78,7 @@ print(f"Hello {dinner_invitees[3]}, would you like to join me for dinner soon?")
     Hello Ming Chow, would you like to join me for dinner soon?
 
 
-## 3-5. Changing Guest List
+### 3-5. Changing Guest List
 You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 
 - Start with your program from Exercise 3-4. Add a print() call at the end of your program stating the name of the guest who can’t make it.
@@ -116,7 +116,7 @@ print(f"Hello {dinner_invitees[3]}, would you like to join me for dinner soon?")
     Hello Joe Rogan, would you like to join me for dinner soon?
 
 
-## 3-6. More Guests
+### 3-6. More Guests
 You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
 
 - Start with your program from Exercise 3-4 or Exercise 3-5. Add a print() call to the end of your program informing people that you found a bigger dinner table.
@@ -164,7 +164,7 @@ for invitee in dinner_invitees:
     Hello Wayne Rooney, would you like to join me for dinner soon?
 
 
-## 3-7. Shrinking Guest List
+### 3-7. Shrinking Guest List
 You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 
 - Start with your program from Exercise 3-6. Add a new line that prints a message saying that you can invite only two people for dinner.
@@ -236,7 +236,7 @@ print(dinner_invitees)
     []
 
 
-## 3-8. Seeing the World
+### 3-8. Seeing the World
 Think of at least five places in the world you’d like to visit.
 
 - Store the locations in a list. Make sure the list is not in alphabetical order.
