@@ -7,10 +7,10 @@ description: Select exercises from Python Crash Course
 ## _Python Crash Course_ Chapter 4
 
 ### 4-1. Pizzas
-Think of at least three kinds of your favorite pizza. Store these pizza names in a list, and then use a for loop to print the name of each pizza.
+Think of at least three kinds of your favorite pizza. Store these pizza names in a list, and then use a `for` loop to print the name of each pizza.
 
-- Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
-- Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
+- Modify your `for` loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like "I like pepperoni pizza".
+- Add a line at the end of your program, outside the `for` loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as "I really love pizza!"
 
 
 ```python
@@ -39,10 +39,10 @@ print("If I was asked to choose between my family or pizza, I'd choose pizza.")
 
 
 ### 4-2. Animals
-Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal.
+Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a `for` loop to print out the name of each animal.
 
-- Modify your program to print a statement about each animal, such as A dog would make a great pet.
-- Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
+- Modify your program to print a statement about each animal, such as "A dog would make a great pet".
+- Add a line at the end of your program stating what these animals have in common. You could print a sentence such as "Any of these animals would make a great pet!"
 
 
 ```python
@@ -67,7 +67,7 @@ print("These are all animals that could be domesticated and trained.")
 
 
 ### 4-3. Counting to Twenty
-Use a for loop to print the numbers from 1 to 20, inclusive.
+Use a `for` loop to print the numbers from 1 to 20, inclusive.
 
 
 ```python
@@ -98,7 +98,7 @@ for num in range(1,21):
 
 
 ### 4-6. Odd Numbers
-Use the third argument of the range() function to make a list of the odd numbers from 1 to 20. Use a for loop to print each number.
+Use the third argument of the `range()` function to make a list of the odd numbers from 1 to 20. Use a `for` loop to print each number.
 
 
 ```python
@@ -122,9 +122,9 @@ for num in odd_numbers:
 ### 4-10. Slices
 Using one of the programs you wrote in this chapter, add several lines to the end of the program that do the following:
 
-- Print the message The first three items in the list are:. Then use a slice to print the first three items from that program’s list.
-- Print the message Three items from the middle of the list are:. Use a slice to print three items from the middle of the list.
-- Print the message The last three items in the list are:. Use a slice to print the last three items in the list.
+- Print the message "The first three items in the list are:". Then use a slice to print the first three items from that program’s list.
+- Print the message "Three items from the middle of the list are:". Use a slice to print three items from the middle of the list.
+- Print the message "The last three items in the list are:". Use a slice to print the last three items in the list.
 
 
 ```python
@@ -152,8 +152,8 @@ for pizza in pizzas[6:]:
 Start with your program from Exercise 4-1. Make a copy of the list of pizzas, and call it `friend_pizzas`. Then, do the following:
 
 - Add a new pizza to the original list.
-- Add a different pizza to the list friend_pizzas.
-- Prove that you have two separate lists. Print the message My favorite pizzas are:, and then use a for loop to print the first list. Print the message My friend’s favorite pizzas are:, and then use a for loop to print the second list. Make sure each new pizza is stored in the appropriate list.
+- Add a different pizza to the list `friend_pizzas`.
+- Prove that you have two separate lists. Print the message "My favorite pizzas are:", and then use a `for` loop to print the first list. Print the message "My friend’s favorite pizzas are:", and then use a `for` loop to print the second list. Make sure each new pizza is stored in the appropriate list.
 
 
 ```python
