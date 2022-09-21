@@ -4,7 +4,7 @@ title: Exercises Ch. 4
 description: Select exercises from Python Crash Course
 ---
 
-## Python Crash Course Chapter 4
+## _Python Crash Course_ Chapter 4
 
 ### 4-1. Pizzas
 Think of at least three kinds of your favorite pizza. Store these pizza names in a list, and then use a for loop to print the name of each pizza.

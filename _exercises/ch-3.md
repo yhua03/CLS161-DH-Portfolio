@@ -4,7 +4,7 @@ title: Exercises Ch. 3
 description: Select exercises from Python Crash Course
 ---
 
-## Python Crash Course Chapter 3
+## _Python Crash Course_ Chapter 3
 
 ### 3-1. Names
 Store the names of a few of your friends in a list called names. Print each person’s name by accessing each element in the list, one at a time.
