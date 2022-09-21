@@ -12,4 +12,25 @@ TODO
 
 ## Code
 
-TODO
+## The Basics of Bokeh
+Before getting into visualizing the entire data set, we will first look at the 
+basics of the bokeh Python library.
+```python
+# my_first_plot.py
+from bokeh.plotting import figure, output_file, show
+output_file('my_first_graph.html')
+
+x = [1, 3, 5, 7]
+y = [2, 4, 6, 8]
+
+p = figure()
+
+p.circle(x, y, size=10, color='red', legend='circle')
+p.line(x, y, color='blue', legend='line')
+p.triangle(y, x, color='gold', size=10, legend='triangle')
+
+p.legend.click_policy='hide'
+show(p)
+```
+
+<img src="../assets/first_plot.png" alt="drawing" width="450"/>
