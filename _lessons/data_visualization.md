@@ -113,3 +113,47 @@ show(p)
 
 ### Categorical Data and Bar Charts: Munitions Dropped by Country
 
+```python
+# munitions_by_country.py
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
+
+from bokeh.models.tools import HoverTool
+from bokeh.palettes import Spectral5
+from bokeh.transform import factor_cmap
+output_file('munitions_by_country.html')
+
+# Read in to dataframe
+df = pd.read_csv('thor_wwii.csv')
+
+# Compute kilotons of munitions (grouped by country)
+grouped = df.groupby('COUNTRY_FLYING_MISSION')[['TOTAL_TONS', 'TONS_HE', 'TONS_IC', 'TONS_FRAG']].sum() / 1000
+
+source = ColumnDataSource(grouped)
+countries = source.data['COUNTRY_FLYING_MISSION'].tolist()
+p = figure(x_range=countries)
+color_map = factor_cmap(field_name='COUNTRY_FLYING_MISSION',
+                    palette=Spectral5, factors=countries)
+p.vbar(x='COUNTRY_FLYING_MISSION', top='TOTAL_TONS', source=source, width=0.70, color=color_map)
+
+# Adjust axis labels
+p.title.text ='Munitions Dropped by Allied Country'
+p.xaxis.axis_label = 'Country'
+p.yaxis.axis_label = 'Kilotons of Munitions'
+
+# Make plot interactive
+hover = HoverTool()
+hover.tooltips = [
+    ("Totals", "@TONS_HE High Explosive / @TONS_IC Incendiary / @TONS_FRAG Fragmentation")]
+hover.mode = 'vline'
+p.add_tools(hover)
+
+# Finally, print the plot
+show(p)
+
+```
+
+<img src="../assets/munitions.png" alt="drawing" width="450"/>
+
+
