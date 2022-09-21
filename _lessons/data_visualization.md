@@ -12,7 +12,7 @@ TODO
 
 ## Code
 
-## The Basics of Bokeh
+### The Basics of Bokeh
 Before getting into visualizing the entire data set, we will first look at the 
 basics of the bokeh Python library.
 ```python
@@ -34,3 +34,40 @@ show(p)
 ```
 
 <img src="../assets/first_plot.png" alt="drawing" width="450"/>
+
+### Loading Tabular Data in Pandas
+We will also look at how we can load tabular data in Pandas from a CSV file.
+```python
+# loading_data.py
+import pandas as pd
+
+df = pd.read_csv('thor_wwii.csv')
+print(df)
+```
+
+```
+           MSNDATE      THEATER COUNTRY_FLYING_MISSION    NAF   UNIT_ID  ... TGT_LONGITUDE  TONS_HE TONS_IC TONS_FRAG  TOTAL_TONS
+0       03/30/1941          ETO          GREAT BRITAIN    RAF   84 SQDN  ...     20.070000      0.0     0.0       0.0         0.0
+1       11/24/1940          ETO          GREAT BRITAIN    RAF  211 SQDN  ...     19.450000      0.0     0.0       0.0         0.0
+2       12/04/1940          ETO          GREAT BRITAIN    RAF  211 SQDN  ...     20.020000      0.0     0.0       0.0         0.0
+3       12/31/1940          ETO          GREAT BRITAIN    RAF  211 SQDN  ...     19.490000      0.0     0.0       0.0         0.0
+4       01/06/1941          ETO          GREAT BRITAIN    RAF  211 SQDN  ...     19.490000      0.0     0.0       0.0         0.0
+...            ...          ...                    ...    ...       ...  ...           ...      ...     ...       ...         ...
+178276  08/01/1945          PTO                    USA  20 AF     73 BW  ...    137.216667      0.0   999.0       0.0       999.0
+178277  07/22/1942          MTO          GREAT BRITAIN    RAF       NaN  ...     27.200000      0.0     0.0       0.0      1300.0
+178278  08/17/1940  EAST AFRICA          GREAT BRITAIN    RAF   47 SQDN  ...     36.400000   4750.0     0.0       0.0      4750.0
+178279  08/06/1945          PTO                    USA  20 AF    509 CG  ...    132.466667  15000.0     0.0       0.0     15000.0
+178280  08/09/1945          PTO                    USA  20 AF    509 CG  ...    129.866667  20000.0     0.0       0.0     20000.0
+
+[178281 rows x 19 columns]
+```
+
+```python
+df.columns.tolist()
+```
+
+```
+['MSNDATE', 'THEATER', 'COUNTRY_FLYING_MISSION', 'NAF', 'UNIT_ID', 'AIRCRAFT_NAME', 'AC_ATTACKING', 'TAKEOFF_BASE', 'TAKEOFF_COUNTRY', 'TAKEOFF_LATITUDE', 'TAKEOFF_LONGITUDE', 'TGT_COUNTRY', 'TGT_LOCATION', 'TGT_LATITUDE', 'TGT_LONGITUDE', 'TONS_HE', 'TONS_IC', 'TONS_FRAG', 'TOTAL_TONS']
+```
+### 
+

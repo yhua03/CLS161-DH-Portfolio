@@ -10,3 +10,6 @@ _site/
 .bundle/
 vendor/
 
+# Ignore programming lesson folders
+visualization/
+
