@@ -69,5 +69,47 @@ df.columns.tolist()
 ```
 ['MSNDATE', 'THEATER', 'COUNTRY_FLYING_MISSION', 'NAF', 'UNIT_ID', 'AIRCRAFT_NAME', 'AC_ATTACKING', 'TAKEOFF_BASE', 'TAKEOFF_COUNTRY', 'TAKEOFF_LATITUDE', 'TAKEOFF_LONGITUDE', 'TGT_COUNTRY', 'TGT_LOCATION', 'TGT_LATITUDE', 'TGT_LONGITUDE', 'TONS_HE', 'TONS_IC', 'TONS_FRAG', 'TOTAL_TONS']
 ```
-### 
+### The Bokeh ColumnDataSource
+```python
+# column_datasource.py
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
+from bokeh.models.tools import HoverTool
+
+output_file('columndatasource_example.html')
+
+# load data to dataframe and create ColumnDataSource instance
+df = pd.read_csv('thor_wwii.csv')
+
+sample = df.sample(50)
+source = ColumnDataSource(sample)
+
+p = figure()
+p.circle(x='TOTAL_TONS', y='AC_ATTACKING',
+         source=source,
+         size=10, color='green')
+
+# Add labels to axes
+p.title.text = 'Attacking Aircraft and Munitions Dropped'
+p.xaxis.axis_label = 'Tons of Munitions Dropped'
+p.yaxis.axis_label = 'Number of Attacking Aircraft'
+
+# Add interactive tools to the plot
+hover = HoverTool()
+hover.tooltips=[
+    ('Attack Date', '@MSNDATE'),
+    ('Attacking Aircraft', '@AC_ATTACKING'),
+    ('Tons of Munitions', '@TOTAL_TONS'),
+    ('Type of Aircraft', '@AIRCRAFT_NAME')
+]
+
+p.add_tools(hover)
+
+show(p)
+```
+
+<img src="../assets/datasource.png" alt="drawing" width="450"/>
+
+### Categorical Data and Bar Charts: Munitions Dropped by Country
 
