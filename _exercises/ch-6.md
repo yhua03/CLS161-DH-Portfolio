@@ -65,8 +65,6 @@ print(f"\nliteral: {glossary['literal']}")
 print(f"\nenvironment: {glossary['environment']}")
 
 
-# for word, meaning in glossary.items():
-#     print(f"{word}: {meaning}\n")
 ```
 
     variable: A location in memory where mutable values are stored
