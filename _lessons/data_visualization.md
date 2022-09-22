@@ -33,7 +33,7 @@ p.legend.click_policy='hide'
 show(p)
 ```
 
-<img src="../assets/first_plot.png" alt="drawing" width="450"/>
+<img src="../assets/first_plot.png" alt="drawing" width="500"/>
 
 ### Loading Tabular Data in Pandas
 We will also look at how we can load tabular data in Pandas from a CSV file.
@@ -109,7 +109,7 @@ p.add_tools(hover)
 show(p)
 ```
 
-<img src="../assets/datasource.png" alt="drawing" width="450"/>
+<img src="../assets/datasource.png" alt="drawing" width="500"/>
 
 ### Categorical Data and Bar Charts: Munitions Dropped by Country
 
@@ -151,9 +151,160 @@ p.add_tools(hover)
 
 # Finally, print the plot
 show(p)
-
 ```
 
-<img src="../assets/munitions.png" alt="drawing" width="450"/>
+<img src="../assets/munitions.png" alt="drawing" width="500"/>
 
+### Stacked Bar Charts and Sub-sampling Data: Types of Munitions Dropped by Country
 
+```python
+# munitions_by_country_stacked.py
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
+from bokeh.palettes import Spectral3
+output_file('types_of_munitions.html')
+
+df = pd.read_csv('thor_wwii.csv')
+
+# filter data for only USA and Great Britain
+filter = df['COUNTRY_FLYING_MISSION'].isin(('USA','GREAT BRITAIN'))
+df = df[filter]
+
+# group data and convert to kilotons
+grouped = df.groupby('COUNTRY_FLYING_MISSION')['TONS_IC', 'TONS_FRAG', 'TONS_HE'].sum() / 1000
+source = ColumnDataSource(grouped)
+countries = source.data['COUNTRY_FLYING_MISSION'].tolist()
+p = figure(x_range=countries)
+
+# ensure figure uses categorical data for x-axis
+p.vbar_stack(stackers=['TONS_HE', 'TONS_FRAG', 'TONS_IC'],
+             x='COUNTRY_FLYING_MISSION', source=source,
+             legend = ['High Explosive', 'Fragmentation', 'Incendiary'],
+             width=0.5, color=Spectral3)
+
+# create a stacked bar chart and show it
+p.title.text ='Types of Munitions Dropped by Allied Country'
+p.legend.location = 'top_left'
+
+p.xaxis.axis_label = 'Country'
+p.xgrid.grid_line_color = None	#remove the x grid lines
+
+p.yaxis.axis_label = 'Kilotons of Munitions'
+
+show(p)
+```
+
+<img src="../assets/munitions_stacked.png" alt="drawing" width="500"/>
+
+### Time-Series and Annotations: Bombing Operations over Time
+
+```python
+# my_first_timeseries.py
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
+from bokeh.palettes import Spectral3
+output_file('simple_timeseries_plot.html')
+
+df = pd.read_csv('thor_wwii.csv')
+
+# make sure MSNDATE is a datetime format
+df['MSNDATE'] = pd.to_datetime(df['MSNDATE'], format='%m/%d/%Y')
+
+grouped = df.groupby('MSNDATE')['TOTAL_TONS', 'TONS_IC', 'TONS_FRAG'].sum() / 1000
+
+source = ColumnDataSource(grouped)
+
+p = figure(x_axis_type='datetime') # ensure x-axis represents time
+
+p.line(x='MSNDATE', y='TOTAL_TONS', line_width=2, source=source, legend='All Munitions')
+p.line(x='MSNDATE', y='TONS_FRAG', line_width=2, source=source, color=Spectral3[1], legend='Fragmentation')
+p.line(x='MSNDATE', y='TONS_IC', line_width=2, source=source, color=Spectral3[2], legend='Incendiary')
+
+p.yaxis.axis_label = 'Kilotons of Munitions Dropped'
+
+show(p)
+```
+
+<img src="../assets/timeseries.png" alt="drawing" width="500"/>
+
+### Resampling Time-Series Data
+```python
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
+from bokeh.palettes import Spectral3
+output_file('simple_timeseries_plot.html')
+
+df = pd.read_csv('thor_wwii.csv')
+
+# make sure MSNDATE is a datetime format
+df['MSNDATE'] = pd.to_datetime(df['MSNDATE'], format='%m/%d/%Y')
+
+grouped = df.groupby(pd.Grouper(key='MSNDATE', freq='M'))['TOTAL_TONS', 'TONS_IC', 'TONS_FRAG'].sum() / 1000
+
+source = ColumnDataSource(grouped)
+
+p = figure(x_axis_type='datetime') # ensure x-axis represents time
+
+p.line(x='MSNDATE', y='TOTAL_TONS', line_width=2, source=source, legend='All Munitions')
+p.line(x='MSNDATE', y='TONS_FRAG', line_width=2, source=source, color=Spectral3[1], legend='Fragmentation')
+p.line(x='MSNDATE', y='TONS_IC', line_width=2, source=source, color=Spectral3[2], legend='Incendiary')
+
+p.yaxis.axis_label = 'Kilotons of Munitions Dropped'
+
+show(p)
+```
+
+<img src="../assets/timeseries_grouped.png" alt="drawing" width="500"/>
+
+### Annotating Trends in Plots
+
+```python
+# annotating_trends.py
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
+from bokeh.models import BoxAnnotation
+from datetime import datetime
+from bokeh.palettes import Spectral3
+output_file('eto_operations.html')
+
+df = pd.read_csv('thor_wwii.csv')
+
+# specify date ranges to annotate
+box_left = pd.to_datetime('6-6-1944')
+box_right = pd.to_datetime('16-12-1944')
+
+#filter for the European Theater of Operations
+filter = df['THEATER']=='ETO'
+df = df[filter]
+
+df['MSNDATE'] = pd.to_datetime(df['MSNDATE'], format='%m/%d/%Y')
+group = df.groupby(pd.Grouper(key='MSNDATE', freq='M'))['TOTAL_TONS', 'TONS_IC', 'TONS_FRAG'].sum()
+group = group / 1000
+
+source = ColumnDataSource(group)
+
+p = figure(x_axis_type="datetime")
+
+p.line(x='MSNDATE', y='TOTAL_TONS', line_width=2, source=source, legend='All Munitions')
+p.line(x='MSNDATE', y='TONS_FRAG', line_width=2, source=source, color=Spectral3[1], legend='Fragmentation')
+p.line(x='MSNDATE', y='TONS_IC', line_width=2, source=source, color=Spectral3[2], legend='Incendiary')
+
+p.title.text = 'European Theater of Operations'
+
+p.yaxis.axis_label = 'Kilotons of Munitions Dropped'
+
+# add annotation to the plot
+box = BoxAnnotation(left=box_left, right=box_right,
+                    line_width=1, line_color='black', line_dash='dashed',
+                    fill_alpha=0.2, fill_color='orange')
+
+p.add_layout(box)
+
+show(p)
+```
+
+<img src="../assets/annotated_trends.png" alt="drawing" width="500"/>
