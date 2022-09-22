@@ -8,9 +8,15 @@ description: This lesson uses Python to count word frequencies, which can be use
 [Turkel, W. J., & Crymble, A. (2012). Counting Word Frequencies with Python. _The Programming Historian_, 1. https://doi.org/10.46430/phen0003](https://programminghistorian.org/en/lessons/counting-frequencies)
 
 ## Reflection
-Word frequency counting in text is a modern method of text analysis. It does not only give us information of what the most commonly used word is in that particular text, but also helps us 
+Word frequency counting in text is a modern (intermediate) method of text analysis. I say it is an intermediate method because word frequency on its own does not allow us to completely summarize the text we're analyzing, but it ends up giving us a lot of information that we can then use in other advanced stages of analyzing text.
+
+With that said, it is important to understand that this technique does not only give us information of what the most commonly used word is in that particular text, but also helps us 
 infer the abstract of the text. In other words, gaining access to most commonly used words in a text is not just the superficial statistic where one has the access to 
 most frequently occuring words in the text, it has a deeper meaning to it in the sense that the most frequently occurring words alone can help us decipher what message the text is trying to convey and in what subject.  In this example from the Programming Historian, Python dictionaries are used to accomplish this with the goal of analyzing text contents in meaningful ways.
+
+I was freely able to follow all methods and concepts discussed in this lesson. The code was 
+simple enough to follow and the only complicated part was figuring out what was going on with 
+zip and maps. I quite liked how the final implementation took URLs as input which made the program more versatile. This is immensely helpful in the field of Digital Humanities, for we can analyze online texts without having to have a local copy of the source.
 
 ## Code
 
