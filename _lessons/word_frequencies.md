@@ -217,7 +217,7 @@ Analyzing the previous output, we can see that the most frequently occurring wor
 that will help us differentiate this text from others, we will filter out the common 
 words. These words are called stop words.
 
-The list of stopwords used below is obtained from [this website](http://ir.dcs.gla.ac.uk/resources/linguistic_utils/stop_words).
+The list of stopwords used below is obtained from [this source](http://ir.dcs.gla.ac.uk/resources/linguistic_utils/stop_words).
 
 ```python
 stopwords = ['a', 'about', 'above', 'across', 'after', 'afterwards']
@@ -279,3 +279,53 @@ is more meaningful than before.
 def removeStopwords(wordlist, stopwords):
     return [w for w in wordlist if w not in stopwords]
 ```
+
+### Putting it All Together
+We now will use the methods we defined to create a word frequency counter that ignores the stop words.
+```python
+# html-to-freq-2.py
+
+import urllib.request, urllib.error, urllib.parse
+import obo
+
+url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
+
+response = urllib.request.urlopen(url)
+html = response.read().decode('UTF-8')
+text = obo.stripTags(html).lower()
+fullwordlist = obo.stripNonAlphaNum(text)
+wordlist = obo.removeStopwords(fullwordlist, obo.stopwords)
+dictionary = obo.wordListToFreqDict(wordlist)
+sorteddict = obo.sortFreqDict(dictionary)
+
+for s in sorteddict: print(str(s))
+```
+
+```
+(25, 'house')
+(20, 'yes')
+(20, 'prisoner')
+(19, 'mr')
+(17, 'man')
+(15, 'akerman')
+(14, 'mob')
+(13, 'black')
+(12, 'night')
+(11, 'saw')
+(9, 'went')
+(9, 'sworn')
+(9, 'room')
+(9, 'pair')
+(9, 'know')
+(9, 'face')
+(8, 'time')
+(8, 'thing')
+(8, 'believe')
+(7, 'window')
+(7, 'took')
+(7, 'swear')
+...
+```
+_Note:_ output is suppressed because it's too long.
+
+And just like that, we have built a fully functional word frequency counter!
