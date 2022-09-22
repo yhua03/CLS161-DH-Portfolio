@@ -308,3 +308,57 @@ show(p)
 ```
 
 <img src="../assets/annotated_trends.png" alt="drawing" width="500"/>
+
+### Spatial Data: Mapping Target Locations
+
+```python
+# target_locations.py
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource, Range1d
+from bokeh.layouts import layout
+from bokeh.palettes import Spectral3
+from bokeh.tile_providers import get_provider
+from pyproj import Transformer
+output_file('mapping_targets.html')
+
+# helper function to convert lat/long to easting/northing for mapping
+# this relies on functions from the pyproj library
+def LongLat_to_EN(long, lat):
+    try:
+        transformer = Transformer.from_crs('epsg:4326', 'epsg:3857')
+        easting, northing = transformer.transform(long, lat)
+        return easting, northing
+    except:
+        return None, None
+
+# read into dataframe
+df = pd.read_csv("thor_wwii.csv")
+
+df['E'], df['N'] = zip(
+    *df.apply(lambda x: LongLat_to_EN(x['TGT_LONGITUDE'], x['TGT_LATITUDE']), axis=1))
+
+# group data
+grouped = df.groupby(['E', 'N'])[['TONS_IC', 'TONS_FRAG']].sum().reset_index()
+
+filter = grouped['TONS_FRAG'] != 0
+grouped = grouped[filter]
+source = ColumnDataSource(grouped)
+
+# specify ranges for plot
+left = -2150000
+right = 18000000
+bottom = -5300000
+top = 11000000
+
+p = figure(x_range=Range1d(left, right), y_range=Range1d(bottom, top))
+
+provider = get_provider('CARTODBPOSITRON')
+p.add_tile(provider)
+p.circle(x='E', y='N', source=source, line_color='grey', fill_color='yellow')
+p.axis.visible = False
+
+show(p)
+```
+
+<img src="../assets/target_locations.png" alt="drawing" width="500"/>
