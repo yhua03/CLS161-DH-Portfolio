@@ -5,4 +5,10 @@ description: This lesson uses Python to count word frequencies, which can be use
 ---
 
 ## Source
-[Turkel, W. J., & Crymble, A. (2012). Counting word frequencies with python. _The Programming Historian_, 1. https://doi.org/10.46430/phen0003](https://programminghistorian.org/en/lessons/counting-frequencies)
+[Turkel, W. J., & Crymble, A. (2012). Counting Word Frequencies with Python. _The Programming Historian_, 1. https://doi.org/10.46430/phen0003](https://programminghistorian.org/en/lessons/counting-frequencies)
+
+## Reflection
+TODO
+
+## Code
+TODO
