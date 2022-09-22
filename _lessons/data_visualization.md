@@ -8,7 +8,13 @@ description: This lesson uses Python to visualize and present data using the Bok
 [Harper, C. (2018). Visualizing data with Bokeh and Pandas. _The Programming Historian_, 7. https://doi.org/10.46430/phen0081](https://programminghistorian.org/en/lessons/visualizing-with-bokeh)
 
 ## Reflection
-TODO
+Data visualization has become an important skill in all disciplines, especially in this day and age.
+It possesses power greater than any textual data, for it can influence someone's opinions on a subject
+rather quickly. Though this can be used in a malicious way to negatively influence people about a subject, 
+the advantages of data visualization to analyze and study data can not be underestimated. To quickly get a visual representation of raw data in the form of plots and bar charts is simply too powerful to ignore in the digital era. In this example from the Programming Historian, Python libraries `bokeh` and `pandas` are used to visualize and explore aspects of WWII bombing runs conducted by the Allied powers.
+
+I was able to follow all concepts and methods detailed in this tutorial, for the code was simple enough to follow and the libraries were very helpful and easy to use. One of the most important things I learned while following the lesson was how important it is to choose the right data visualization technique in order to clearly convey unbiased information related to the raw data. In doing so, I got to learn about new plots and their use cases, like "Stacked Bar Charts" and how trends and time series can be annotated in such charts to show the complete picture of the underlying data.
+
 
 ## Code
 
