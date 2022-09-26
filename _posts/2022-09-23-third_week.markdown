@@ -3,6 +3,7 @@ layout: post
 title:  "Week 2"
 date:   "2022-09-23"
 categories: jekyll update
+---
 
 ## Chapter 1 - *What are the humanities? What are the digital humanities?* ##
 
