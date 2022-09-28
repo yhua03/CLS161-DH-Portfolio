@@ -11,7 +11,7 @@ Assign a message to a variable, and then print that message.
 
 
 ```python
-message = "hello world"
+message = "Hello World"
 print(message)
 ```
 
@@ -111,7 +111,7 @@ Choose two of the programs you’ve written, and add at least one comment to eac
 
 ```python
 # This program prints a message "hello world"
-message = "hello world"
+message = "Hello World"
 print(message)
 ```
 
