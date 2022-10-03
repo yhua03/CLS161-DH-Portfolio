@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Keywords in Context (Using n-grams) with Python
-description: This lesson uses Python to extract all possible n-grams from a body of text.
+description: This lesson uses Python to extract all possible n-grams from a body of text and subsequently generate keywords in context from them.
 ---
 
 ## Source
