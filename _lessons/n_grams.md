@@ -67,7 +67,7 @@ def getNGrams(wordlist, n):
     return ngrams
 ```
 
-An example use case of the `useNGrams` method is shown below.
+An example use case of the `getNGrams` method is shown below.
 ```python
 # useGetNGrams.py
 
