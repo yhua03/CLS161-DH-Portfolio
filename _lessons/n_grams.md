@@ -276,6 +276,8 @@ else:
 outstr += '</pre>'
 obo.wrapStringInHTMLMac('html-to-kwic', url, outstr)
 ```
-Opening the `html-to-kwic.html` file using Safari, this is the output I saw:
+Opening the `html-to-kwic.html` file using Safari, this is the output I see:
 
 <img src="../assets/kwic.png" alt="drawing" width="700"/>
+
+Pretty cool!
