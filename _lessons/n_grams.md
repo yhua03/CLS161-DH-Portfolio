@@ -261,14 +261,14 @@ fullwordlist = ('# ' * (n//2)).split()
 fullwordlist += obo.stripNonAlphaNum(text)
 fullwordlist += ('# ' * (n//2)).split()
 ngrams = obo.getNGrams(fullwordlist, n)
-worddict = nGramsToKWICDict(ngrams)
+worddict = obo.nGramsToKWICDict(ngrams)
 
 # output KWIC and wrap with html
 target = 'black'
 outstr = '<pre>'
 if target in worddict:
     for k in worddict[target]:
-        outstr += prettyPrintKWIC(k)
+        outstr += obo.prettyPrintKWIC(k)
         outstr += '<br />'
 else:
     outstr += 'Keyword not found in source'
