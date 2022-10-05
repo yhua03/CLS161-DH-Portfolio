@@ -8,7 +8,6 @@ description: Here I evaluate Google's Ngram Viewer tool.
 [Google. (n.d.). Google books Ngram Viewer. Google Books. Retrieved October 3, 2022.](https://books.google.com/ngrams)
 
 ## Evaluation
-#### TODO: 37 words
 
 The "Google Books Ngram Viewer" is a digital tool that allows users to graphically view the rate of occurrence of ngrams in a corpus of books over the selected date range. This is particularly interesting, for this tool shows us how frequent the occurrence of a given ngram is over the years, which can be used to analyze the trends in use of such phrases in the corpus which can further be used to derive contextual information about those phrases in that time period. According to [HistoryOfInformation](https://www.historyofinformation.com/detail.php?id=3786), this tool was developed by Jon Orwant and Will Brockman at Google and was released in mid-December 2010.
 
