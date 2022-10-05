@@ -15,7 +15,7 @@ As the name of the project suggests, the most basic question that this tool answ
 
 <img src="../assets/fiction.png" alt="science fiction bigram search" width="900"/>
 
-We can observe from this graph alone that the bigram "science fiction" did not become popular in the English corpus until the late 1940s. At the peak at around 2017, the y-axis value of 0.00244% indicates that "science fiction" bigram accounts for about 0.00244% of all bigrams in the English corpus published since 1800.
+We can observe from this graph alone that the bigram "science fiction" did not become popular in the English corpus until the late 1940s. At the peak at around 2017, the y-axis value of 0.000244% indicates that "science fiction" bigram accounts for about 0.000244% of all bigrams in the English corpus published since 1800.
 
 The primary technology used by Google to analyze texts and produce this graphs is Natural Language Processing and Optical Character Recognition (OCR). Google Books serves as a massive source of data for this tool and is rightly used to create these charts. Moreover, the fact that one can search for different parts of speech for ngrams is also a great feature that will help researchers and historians. For instance, one can use this tool to search for cook (as a noun) vs cook (as a verb). 
 
