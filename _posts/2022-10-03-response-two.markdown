@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Reading Response #2"
+title: "An Overview of The Decline and Fall of the Roman Empire"
 date: 2022-10-03
 categories: jekyll update
 ---
-## An Overview of _The Decline and Fall of the Roman Empire_
 
 In "An Overview of _The Decline and Fall of the Roman Empire_", author J. G. A. Pocock primarily discusses the famous work of Edward Gibbon, "The History of the Decline and Fall of the Roman Empire". In analyzing Gibbon's work, Pocock pinpoints some inaccuracies and inconsistencies which can be considered as a direct criticism of this renowned historical piece. In my opinion, the grounds for Pocock's criticism is justified since he argues that Gibbon's analysis is not very accurate simply because of the lack of evidence, eyewitnesses, and textual material like books and manuscripts at his location during that time period. He further expands on this and tries to justify it by citing several examples from Gibbon's work where his historiography alters as he moves from one narrative to another. Also, Gibbon's work places a strong emphasis on the narrative of the history of religion, which dominates all other narratives, as Pocock makes clear in this article.
 

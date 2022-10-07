@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Reading Response #1"
+title: "Humanities and The Digial Humanities"
 date: 2022-10-01
 categories: jekyll update
 ---
-## Humanities and The Digial Humanities
 
 In this blog post, I will be reflecting on the two readings that introduced me to the world of "Humanities" and "Digital Humanities". In "The Humanities" by William B. Drees, the author tries to define the humanities and its scope by analyzing how we as humans try to study humans. This self-reference of humans studying humans is a strong and salient idea that backs the author's views on how humanities should be defined. However, I find it quite fascinating that the conclusion the author draws at the end about what humanities is heavily depends on what you think humanities encapsulates - it is objective and that is how humanities differentiates itself from the natural sciences. Moreover, unlike natural sciences where everything is so well-defined, humanities itself is an amalgamation of several human-related sciences, including the language, culture, tradition, linguistics, history, and so on, which prevents humanities from having a concrete definition of its own.
 
