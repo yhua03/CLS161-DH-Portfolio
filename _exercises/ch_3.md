@@ -166,10 +166,10 @@ print(locations)
 locations.sort(reverse=True)
 print(locations)
 ```
-["Galapagos", "Italy", "Egypt", "Belize", "Indonesia"]
-["Belize", "Egypt", "Indonesia", "Italy", "Galapagos"]
-["Galapagos", "Italy", "Egypt", "Belize", "Indonesia"]
-["Indonesia", "Belize", "Egypt", "Italy", "Galapagos"]
-["Galapagos", "Italy", "Egypt", "Belize", "Indonesia"]
-["Belize", "Egypt", "Indonesia", "Italy", "Galapagos"]
-["Galapagos", "Italy", "Egypt", "Belize", "Indonesia"]
+        ["Galapagos", "Italy", "Egypt", "Belize", "Indonesia"]
+        ["Belize", "Egypt", "Indonesia", "Italy", "Galapagos"]
+        ["Galapagos", "Italy", "Egypt", "Belize", "Indonesia"]
+        ["Indonesia", "Belize", "Egypt", "Italy", "Galapagos"]
+        ["Galapagos", "Italy", "Egypt", "Belize", "Indonesia"]
+        ["Belize", "Egypt", "Indonesia", "Italy", "Galapagos"]
+        ["Galapagos", "Italy", "Egypt", "Belize", "Indonesia"]
