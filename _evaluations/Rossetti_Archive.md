@@ -17,6 +17,8 @@ As a working example, I searched for "atheism," "atheist," "agnosticism," and "a
 
 <img src="../assets/search engine.jpg" alt="search engine" width="600"/>
 
-This tool may have a good sue case for cultural historians who want the "big picture" of when various terms are used, how frequently they are used, and if they are used in corelation with other important terms. In the example above, the cultural historian would be alerted to the importance of 1770 CE to 1803 CE in the discourse about atheism. Of course, what this tool does not show is the context in which the term is used. One would have to find a different tool for that.
+<img src="../assets/poetry archive.jpg" alt="search engine" width="600"/>
 
-A strength of this tool is that it is easy to use. There is no software to download or code to write. It is also a strength that with just a few keyboard strokes one can get a big picture of how often a given term has been used in written documents in the past. That said, it is unfortunate that a user cannot search by bigrams or phrases. Adding this capacity would greatly improve the use of this tool for historians and literary scholars.
+<img src="../assets/picture archive.jpg" alt="search engine" width="600"/>
+
+
