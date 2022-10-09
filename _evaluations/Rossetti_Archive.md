@@ -17,6 +17,6 @@ As a working example, I searched for "atheism," "atheist," "agnosticism," and "a
 
 <img src="../assets/search engine.jpg" alt="search engine" width="600"/>
 
-<img src="../assets/poetry archive.jpg" alt="search engine" width="200"/> The screenshot on the left showcases Rossetti's work as an poet and the screenshot to the right showcases his work as an artist.<img src="../assets/picture archive.jpg" alt="search engine" width="200"/>
-
+<img src="../assets/poetry archive.jpg" alt="search engine" width="300"/>  <img src="../assets/picture archive.jpg" alt="search engine" width="200"/>
+The screenshot on the left showcases Rossetti's work as an poet and the screenshot to the right showcases his work as an artist. As a digital collection of Rossetti's work throughout his life, the Archive is a valuable tool for anyone, whether out or curiosity or research goals, to examine the work and life of a great artist and poet in the history. 
 
