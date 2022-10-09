@@ -17,8 +17,6 @@ As a working example, I searched for "atheism," "atheist," "agnosticism," and "a
 
 <img src="../assets/search engine.jpg" alt="search engine" width="600"/>
 
-<img src="../assets/poetry archive.jpg" alt="search engine" width="200"/>
-
-<img src="../assets/picture archive.jpg" alt="search engine" width="200"/>
+<img src="../assets/poetry archive.jpg" alt="search engine" width="200"/> <img src="../assets/picture archive.jpg" alt="search engine" width="200"/>
 
 
