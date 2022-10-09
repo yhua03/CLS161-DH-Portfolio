@@ -1,11 +1,11 @@
 ---
 layout: page
-title: HathiTrust Bookworm
-description: Here I evaluate HathiTrust's Bookworm tool.
+title: The Rossetti Archive
+description: Here I evaluate The Rossetti Archive
 ---
 ## Source
 
-[HathiTrust Research Center. HathiTrust+Bookworm. Accessed September 3, 2022.](https://bookworm.htrc.illinois.edu.)
+[The Rossetti Archive. Accessed Octoboer 9, 2022.](http://www.rossettiarchive.org/index.html)
 
 ## Evaluation
 
