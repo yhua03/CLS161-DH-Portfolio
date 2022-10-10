@@ -3,6 +3,8 @@ layout: page
 title: Introduction to Computer Vision and Deep Learning with Python
 description: This is the first of a two-part lesson introducing deep learning based computer vision methods for humanities research. Using a dataset of historical newspaper advertisements and the fastai Python library, the lesson walks through the pipeline of training a computer vision model to perform image classification.
 ---
+
+## UNFINISHED VERSION ##
 ## Source
 [Computer Vision for the Humanities: An Introduction to Deep Learning for Image Classification (Part 1)," (https://doi.org/10.46430/phen0101)](https://programminghistorian.org/en/lessons/computer-vision-deep-learning-pt1)
 
