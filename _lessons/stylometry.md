@@ -9,7 +9,7 @@ description: This is the first of a two-part lesson introducing deep learning ba
 ## Reflection
 While historians have been largely neglecting non-texual forms of representation, it is evident that a significant amount of work was documenteed as visual representations rather than texual. As a growing field of application, computer vision has became one of the most valuable digital technology tools for historians to study humanities that were documented and created as visual representations. This Programming Historian Lesson is a great source of information for anyone like me who's interested in the topic but does not have a solid understanding of the science behind machine learning.
 
-As someone who comes from a non-CS background, concepts like deep learning or computer vision technology all sound very intimidating to me at first. However, the prior skills required for this Programming Historian Lesson were merely the basic understanding of Python and the use of Jupyter Notebook. 
+As someone who comes from a non-CS background, concepts like deep learning or computer vision technology all sound very intimidating to me at first. However, the prior skills required for this Programming Historian Lesson were merely the basic understanding of Python and the use of Jupyter Notebook. I gained some confidence back after reading the requirements, and It was genuinely a challenging but fun experience learning topics like OCR and NLP through Python.
 ## Code
 
 ## Preparing the Data for Analysis
