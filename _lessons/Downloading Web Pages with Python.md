@@ -16,13 +16,27 @@ After reading through the lesson tutorials, I decided to change up the content a
 
 
 ## Code: Opening Web Pages With Python
+
 ```python
 import urllib.request, urllib.error, urllib.parse
 
-url = 'https://www.op.gg/'
+url = 'https://www.op.gg/summoners/na/dong%20bei%20hu'
 
 response = urllib.request.urlopen(url)
 webContent = response.read().decode('UTF-8')
 
 print(webContent[0:300])
+```
+
+The five lines of code above contain three variables that I named, url, response and webContent. The variable url simply stores our desired url, and the response variable utilizes a function called urlopen, which is a part of the urllib.request that we imported initially. 
+
+Below denotes the resulting output of the command lines, which contains some HTML markups: 
+```python
+<!DOCTYPE html><html lang="en"><head><script>
+            (function(t, l) {
+                try {
+                    let w = window,
+                        d = document,
+                        s = d.createElement("script"),
+                        f = d.getElementsByTagName("script")[0];
 ```
