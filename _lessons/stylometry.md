@@ -1,16 +1,15 @@
 ---
 layout: page
-title: Introduction to stylometry with Python
-description: This lesson uses Python to apply stylometric analysis to the Federalist Papers to determine authorship of a few of the papers.
+title: Introduction to Computer Vision and Deep Learning with Python
+description: This is the first of a two-part lesson introducing deep learning based computer vision methods for humanities research. Using a dataset of historical newspaper advertisements and the fastai Python library, the lesson walks through the pipeline of training a computer vision model to perform image classification.
 ---
 ## Source
-[François Dominic Laramée, "Introduction to stylometry with Python," Programming Historian 7 (2018), https://doi.org/10.46430/phen0078.](https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python)
+[Computer Vision for the Humanities: An Introduction to Deep Learning for Image Classification (Part 1)," (https://doi.org/10.46430/phen0101)](https://programminghistorian.org/en/lessons/computer-vision-deep-learning-pt1)
 
 ## Reflection
-Stylometry is the practice of identifying unique features of an author's style which can then be used to figure out who wrote an unidentified text. In this example from the Programming Historian, stylometry is used to identify the author of one of the Federalist Papers. Three stylometric tests are used: "Mendenhall's characteristic curves of composition", "Kilgariff's chi-squared method", and "John Burrow's delta method."
+While historians have been largely neglecting non-texual forms of representation, it is evident that a significant amount of work was documenteed as visual representations rather than texual. As a growing field of application, computer vision has became one of the most valuable digital technology tools for historians to study humanities that were documented and created as visual representations. This Programming Historian Lesson is a great source of information for anyone like me who's interested in the topic but does not have a solid understanding of the science behind machine learning.
 
-I was not able to follow the discussion of the math underlying the methods here, but the code was not too complicated to follow once I sat down and really read through it. One of the main things I learned was how complex it can be to get data into the right "shape" for analysis. All of the dictionaries used here were complex, but I see how it was necessary to put the data together in that way. Another thing I learned was that "stopwords" which are often not important for other kinds of analysis are very important when it comes to stylometry because authors often use "stopwords" in unique and identifiable ways.
-
+As someone who comes from a non-CS background, concepts like deep learning or computer vision technology all sound very intimidating to me at first. However, the prior skills required for this Programming Historian Lesson were merely the basic understanding of Python and the use of Jupyter Notebook. 
 ## Code
 
 ## Preparing the Data for Analysis
