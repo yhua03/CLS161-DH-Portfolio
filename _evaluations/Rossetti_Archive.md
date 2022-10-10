@@ -9,14 +9,14 @@ description: Here I evaluate The Rossetti Archive
 
 ## Evaluation
 
-"Bookworm" from HathiTrust is a digital tool which allows users to search the HathiTrust digital library for word counts for any given term or set of terms. This allows users to look up a word and see how often that word occurs each year. According to the project web page, this took was originally created by Ben Sschmidt at Harvard University for Google's Ngram viewer but was adapted for the HathiTrust digital library by Peter Organisciak(Who is now at the University of Denver.)
+The Rossetti Archive is a digital collection that aims to capture every single surviving piece of work of Dante Gabriel Rossetti(DGR). As a painter, designer, writer, and translator, DGR impacted various fields of art during the second half of the nineteenth century in Great Britain. The Archive serves a really valuable tool for researchers or the general public to learn about DGR and his legacy through visualized documentation of his work. 
 
-The basic search feature allows for a number of different filters such as "Fiction or Not Fiction", Genres, Languages, Author, and others. This may allow for more nuanced searching. Users can search for multiple terms but not for bigrams or phrases. For example, you can search for "science" and "fiction" but not "science fiction." This seems somewhat limiting to me.
+The Archive was completed in 2008 but continues to add any newly identified or created pieces of work of DGR. The Archive also does a great job in terms of device adapatbility. The Rossetti Archive is optimized for web browsers that comply with current HTML and CSS, which basicallyy means you can access the weebsite through any browser even on mobile devices. 
 
-As a working example, I searched for "atheism," "atheist," "agnosticism," and "agnotic." "Atheism" and "atheist" reach something of a peak a little after 1800 CE whereas "agnosticism" and "agnostic" reach a much smaller peak a little before 1900 CE. It also appears that there is a slight up tick in each term right around 2000 CE. Perhaps most telling is that there is a steep increase in the use of the term "atheism" from about 1770 CE to about 1803 CE. Here is an example of that search:
-
+Some notable features of the Archive include a serach engine that allows users to set customized search filters to effectively and precisely locate the information desired. For example, users can search by the title of the work, the genre of the work or the date of completion of the work. There's even a boolean search function where users can put two parameters and search for entires that fulfill the boolean filter. The screenshot below shows what the search engine looks like:
 <img src="../assets/search engine.jpg" alt="search engine" width="600"/>
 
-<img src="../assets/poetry archive.jpg" alt="search engine" width="300"/>  <img src="../assets/picture archive.jpg" alt="search engine" width="200"/>
+<img src="../assets/poetry archive.jpg" alt="search engine" width="300"/>         <img src="../assets/picture archive.jpg" alt="search engine" width="200"/>
+
 The screenshot on the left showcases Rossetti's work as an poet and the screenshot to the right showcases his work as an artist. As a digital collection of Rossetti's work throughout his life, the Archive is a valuable tool for anyone, whether out or curiosity or research goals, to examine the work and life of a great artist and poet in the history. 
 
