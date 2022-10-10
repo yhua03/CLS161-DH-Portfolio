@@ -16,6 +16,7 @@ After reading through the lesson tutorials, I decided to change up the content a
 
 
 ## Code: Opening Web Pages With Python
+```python
 import urllib.request, urllib.error, urllib.parse
 
 url = 'https://www.op.gg/'
@@ -24,3 +25,4 @@ response = urllib.request.urlopen(url)
 webContent = response.read().decode('UTF-8')
 
 print(webContent[0:300])
+```
