@@ -128,3 +128,36 @@ The first three items in the list are: cat dog lion
 Two items from the middle of the list are: lion monkey 
 The last three items in the list are: monkey tiger moose 
 
+### 4-11. My Pizzas, Your Pizzas
+Start with your program from Exercise 4-1. Make a copy of the list of pizzas, and call it `friend_pizzas`. Then, do the following:
+
+- Add a new pizza to the original list.
+- Add a different pizza to the list `friend_pizzas`.
+- Prove that you have two separate lists. Print the message "My favorite pizzas are:", and then use a `for` loop to print the first list. Print the message "My friend’s favorite pizzas are:", and then use a `for` loop to print the second list. Make sure each new pizza is stored in the appropriate list.
+
+
+```python
+pizzas = ["cheese", "hawaian", "meat"]
+friend_pizzas = pizzas[:]
+pizzas.append("fungi")
+friend_pizzas.append("tuna")
+
+print("My favorite pizzas are:")
+for pizza in pizzas:
+    print(pizza)
+    
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza)
+```
+
+My favorite pizzas are:
+cheese
+hawaian
+meat
+fungi
+My friend's favorite pizzas are:
+cheese
+hawaian
+meat
+tuna
