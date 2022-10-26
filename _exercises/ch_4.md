@@ -53,3 +53,78 @@ I have a cat at home as a pet
 I have a dog at home as a pet 
 I have a lion at home as a pet 
 All are very kind and tamable creatures:)
+
+### 4-3. Counting to Twenty
+Use a `for` loop to print the numbers from 1 to 20, inclusive.
+
+```python
+for num in range(1,21):
+    print(num)
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+### 4-6. Odd Numbers
+Use the third argument of the `range()` function to make a list of the odd numbers from 1 to 20. Use a `for` loop to print each number.
+
+```python
+odd = range(1, 21, 2)
+for numb in odd:
+        print(numb)
+```
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+
+### 4-10. Slices
+Using one of the programs you wrote in this chapter, add several lines to the end of the program that do the following:
+- Print the message "The first three items in the list are:". Then use a slice to print the first three items from that program’s list.
+- Print the message "Three items from the middle of the list are:". Use a slice to print three items from the middle of the list.
+- Print the message "The last three items in the list are:". Use a slice to print the last three items in the list.
+
+```python
+animals = ["cat", "dog", "lion", "monkey", "tiger", "moose"]
+///first task///
+print(f"The first three items in the list are: ", end='')
+for animal in animals[:3]:
+    print(animal, end=' ')
+
+///second task///
+print(f"Two items from the middle of the list are: ", end='')
+for animal in animals[2:4]:
+    print(animal, end=' ')
+    
+///thrid task///
+print(f"The last three items in the list are: ", end='')
+for animal in animals[3:6]:
+    print(animal, end=' ')
+```
+The first three items in the list are: cat dog lion 
+Two items from the middle of the list are: lion monkey 
+The last three items in the list are: monkey tiger moose 
+
