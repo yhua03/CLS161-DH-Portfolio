@@ -101,4 +101,69 @@ Write an `if-elif-else` chain that determines a person’s stage of life. Set a 
 - If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
 - If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 - If the person is age 65 or older, print a message that the person is an elder.
+
+
+```python
+age = 10
+if age < 2:
+    print("You are a baby.")
+elif age >= 2 and age < 4:
+    print("You are a toddler.")
+elif age >=4 and age < 13:
+    print("You are a kid.")
+elif age >= 13 and age < 20:
+    print("You are a teenager.")
+elif age >=20 and age < 65:
+    print("You are an adult.")
+else:
+    print("You are an elder")
 ```
+You are a kid.
+
+### 5-7. Favorite Fruit
+
+Make a list of your favorite fruits, and then write a series of independent `if` statements that check for certain fruits in your list.
+
+- Make a list of your three favorite fruits and call it `favorite_fruits`.
+- Write five `if` statements. Each should check whether a certain kind of fruit is in your list. If the fruit is in your list, the `if` block should print a statement, such as "You really like bananas!"
+
+```python
+favorite_fruits = ["watermelon", "grape", "lime"]
+if "banana" in favorite_fruits:
+    print("You really like banans!")
+    
+if "watermelon" in favorite_fruits:
+    print("You really like watermelons!")
+    
+if "grape" in favorite_fruits:
+    print("You really like grapes!")
+    
+if "lemon" in favorite_fruits:
+    print("You really like lemons!")
+```
+
+You really like watermelons!
+You really like grapes!
+
+### 5-8. Hello Admin
+
+Make a list of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the list, and print a greeting to each user:
+
+- If the username is 'admin', print a special greeting, such as "Hello admin, would you like to see a status report?"
+- Otherwise, print a generic greeting, such as "Hello Eric, thank you for logging in again."
+
+```python
+usernames = ['admin', 'fhua', 'msaxton', 'yhua03', 'spongebob']
+for username in usernames:
+    if username == 'admin':
+        print(f"Hello {username}, would you like to see a status report?")
+    else:
+        print(f"Hello {username}, thank you for logging in again.")
+```
+
+Hello admin, would you like to see a status report?
+Hello fhua, thank you for logging in again.
+Hello msaxton, thank you for logging in again.
+Hello yhua03, thank you for logging in again.
+Hello spongebob, thank you for logging in again.
+
