@@ -24,7 +24,7 @@ Moreover, data visualization is an important analysis tool which will be an inte
 To conclude, this method of answering the question my project proposes to address is an effective use of Python NLP libraries and is very powerful owing to the flexibility of the ability to change date ranges and keywords to adapt to any "major event". By employing these advanced NLP strategies, this project will be helpful in analyzing the sentiments of Tweets made by people and how they might change as time passes.
 
 ### Sources and references:
-- https://www.analyticsvidhya.com/blog/2021/06/twitter-sentiment-analysis-a-nlp-use-case-for-beginners/
-- https://www.geeksforgeeks.org/named-entity-recognition/
-- https://www.kaggle.com/c/nlp-getting-started
-- http://www.cs.cmu.edu/~ark/TweetNLP/
+- Goyal, G. (2022, August 25). Twitter sentiment analysis: Implement twitter sentiment analysis model. Analytics Vidhya. Retrieved November 4, 2022, from https://www.analyticsvidhya.com/blog/2021/06/twitter-sentiment-analysis-a-nlp-use-case-for-beginners/ 
+- Named entity recognition. GeeksforGeeks. (2022, October 18). Retrieved November 4, 2022, from https://www.geeksforgeeks.org/named-entity-recognition/ 
+- Natural language processing with disaster tweets. Kaggle. (n.d.). Retrieved November 4, 2022, from https://www.kaggle.com/c/nlp-getting-started 
+- Tweet NLP. Twitter Natural Language Processing -- Noah's ARK. (n.d.). Retrieved November 4, 2022, from http://www.cs.cmu.edu/~ark/TweetNLP/ 
