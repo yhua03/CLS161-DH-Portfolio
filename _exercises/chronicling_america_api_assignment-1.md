@@ -264,6 +264,5 @@ sorted_df.head() # checking the output
 # save to csv
 sorted_df.to_csv(f'../assets/{search_term}{start_date}-{end_date}.csv', index=False)
 
-# note: the file is too large to be uploaded to github, so I hosted it myself. It can be found at:
-
+# note: the file is too large to be uploaded to github, so I hosted it myself. It can be found at: https://www.eecs.tufts.edu/~adahal01/soccer1821-1963.csv
 ```
