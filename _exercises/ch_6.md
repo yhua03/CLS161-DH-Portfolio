@@ -122,4 +122,27 @@ Brazil
 Start with the program you wrote for Exercise 6-1. Make two new dictionaries representing different people, and store all three dictionaries in a list called `people`. Loop through your list of people. As you loop through the list, print everything you know about each person.
 
 ```python
+person1 = {'first_name' : 'Frank', 'last_name' : 'Hua' , 'age' : 22, 'city' : 'Shanghai'}
+person2 = {'first_name' : 'Rick', 'last_name' : 'Sanchez' , 'age' : 70, 'city' : 'Dimension C-137'}
+person3 = {'first_name' : 'Cece', 'last_name' : 'Pan' , 'age' : 22, 'city' : 'Boston'}
+people = [person1, person2, person3]
+for person in people:
+    for key, value in person.items():
+        print(f"{key}: {value}")
+    print()
 ```
+
+first_name: Frank
+last_name: Hua
+age: 22
+city: Shanghai
+
+first_name: Rick
+last_name: Sanchez
+age: 70
+city: Dimension C-137
+
+first_name: Cece
+last_name: Pan
+age: 22
+city: Boston
