@@ -146,3 +146,24 @@ first_name: Cece
 last_name: Pan
 age: 22
 city: Boston
+
+### 6-8. Pets
+
+Make several dictionaries, where the name of each dictionary is the name of a pet. In each dictionary, include the kind of animal and the owner’s name. Store these dictionaries in a list called `pets`. Next, loop through your list and as you do print everything you know about each pet.
+
+```python
+Udon = {'name' : 'Udon', 'age' : 1, 'species' : 'cat'}
+Tora = {'name' : 'Kitty', 'age' : 6, 'species' : 'cat'}
+pets = [Udon, Tora]
+for pet in pets:
+    for key, value in pet.items():
+        print(f"{key}: {value}")
+    print()
+```
+name: Udon
+age: 1
+species: cat
+
+name: Kitty
+age: 6
+species: cat
