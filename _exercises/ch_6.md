@@ -85,3 +85,41 @@ Python variable: a reference or pointer to an object
 
 boolean: a result that can only have one of two possible values: true or false
 
+### 6-5. Rivers
+
+Make a dictionary containing three major rivers and the country each river runs through. One key-value pair might be 'nile': 'egypt'.
+
+ - Use a loop to print a sentence about each river, such as "The Nile runs through Egypt."
+
+ - Use a loop to print the name of each river included in the dictionary.
+
+ - Use a loop to print the name of each country included in the dictionary.
+
+```python
+rivers = {'nile' : 'egypt', 'yellow river' : 'china', 'amazon river' : 'brazil'}
+for river, country in rivers.items():
+    print(f"The {river.title()} runs through {country.title()}")
+# name of rivers
+for river in rivers.keys():
+    print(river.title())
+# countries in the dictionary
+for country in rivers.values():
+    print(country.title())
+```
+
+The Nile runs through Egypt
+The Yellow River runs through China
+The Amazon River runs through Brazil
+Nile
+Yellow River
+Amazon River
+Egypt
+China
+Brazil
+
+### 6-7. People
+
+Start with the program you wrote for Exercise 6-1. Make two new dictionaries representing different people, and store all three dictionaries in a list called `people`. Loop through your list of people. As you loop through the list, print everything you know about each person.
+
+```python
+```
