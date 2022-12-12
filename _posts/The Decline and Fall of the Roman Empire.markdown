@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Week 3"
-date:   "2022-09-30"
-categories: jekyll update
+layout: blog
+title: The Decline and Fall of the Roman Empire
+permalink: /reading-blog/
 ---
 
 ## Chapter 2 - *The Decline and Fall of the Roman Empire* ##
