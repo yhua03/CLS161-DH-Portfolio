@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Distant Reading"
+title:  "NLP"
 date:   "2022-10-24"
 categories: jekyll update
 ---
