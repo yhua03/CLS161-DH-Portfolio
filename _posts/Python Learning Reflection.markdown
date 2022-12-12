@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Distant Reading"
-date:   "2022-10-24"
+title:  "Python Learning Journey"
+date:   "2022-11-12"
 categories: jekyll update
 ---
 
