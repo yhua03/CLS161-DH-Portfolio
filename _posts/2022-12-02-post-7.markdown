@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Technology and the humanities"
+date:   "2022-12-02"
+categories: jekyll update
+---
