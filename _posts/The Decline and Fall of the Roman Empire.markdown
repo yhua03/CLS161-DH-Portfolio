@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title:  "Week 3"
 date:   "2022-09-30"
 categories: jekyll update
