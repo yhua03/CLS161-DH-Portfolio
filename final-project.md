@@ -13,14 +13,20 @@ The appraoch that I decided to take was to choose several channels, each of whic
 
 League of Legends (LoL) is a multiplayer online battle arena (MOBA) video game developed and published by Riot Games. It is one of the most popular games in the world, with millions of active players and a dedicated competitive scene. In LoL, players control a champion character and work with their team to destroy the enemy team's nexus, which is located in the enemy team's base. Each champion has unique abilities and characteristics, and players can earn experience points and gold by defeating enemy champions and minions (computer-controlled characters that fight for each team). Players can use the gold they earn to purchase items that can improve their champion's stats and abilities.
 
-It is difficult to determine the exact number of active players in League of Legends (LoL) at any given time, as the game has a large and constantly changing player base. However, Riot Games, the developer and publisher of LoL, has reported that the game has an average of around 8 million daily players and a peak of around 11 million concurrent players. These numbers have likely changed since my knowledge cutoff in 2021, and it is possible that the game has even more active players now. LoL is one of the most popular games in the world and has a dedicated player base and competitive scene.
+Riot Games has reported that the game has an average of around 8 million daily players and a peak of around **11 million** concurrent players.
 
 
 **Teamfight Tactics**
 
-Teamfight Tactics (TFT) is a strategy game developed and published by Riot Games, the same company that developed League of Legends (LoL). TFT is a round-based strategy game that is played on a grid-based board. Players start each round with a set amount of gold and use it to recruit champions and build a team. The game has elements of deck-building and dice rolling, as players can purchase and upgrade items for their champions and roll for random effects on the board. TFT has been very popular since its release and has a dedicated player base. It is possible that the game has millions of active players.
+Teamfight Tactics (TFT) is a strategy game developed and published by Riot Games, the same company that developed League of Legends (LoL). TFT is a round-based strategy game that is played on a grid-based board. Players start each round with a set amount of gold and use it to recruit champions and build a team. The game has elements of deck-building and dice rolling, as players can purchase and upgrade items for their champions and roll for random effects on the board. TFT has been very popular since its release and has a dedicated player base. It is possible that the game has **millions** of active players.
 
 **Valorant**
+
+Valorant is another tactical first-person shooter (FPS) video game developed and published by Riot Games. It is set in a near-future Earth and features a cast of characters known as "Agents", each with their own unique set of weapons and abilities. The game combines tactical shooting with elements of battle royale and character-based shooter games The population of Valorant is estimated at about **16.43M** players.
+
+**Apex Legends**
+
+Apex Legends is a free-to-play battle royale game developed by Respawn Entertainment and published by Electronic Arts. It was released for Microsoft Windows, PlayStation 4, and Xbox One on February 4, 2019. The game is set in the Titanfall universe and features a cast of characters known as “Legends”. Each Legend has their own unique set of abilities and playstyles, allowing players to choose their favorite and create teams that synergize with one another. As of April 2020, Apex Legends has over **70 million** players worldwide.
 
 Imported Libraries and Initial setup: 
 
@@ -112,3 +118,19 @@ for game in game_list:
  Word Frequencies Results:
  
  
+ 
+```python
+# wordcloud generation
+
+# add more stopwords
+stopwords = wordcloud.STOPWORDS
+stopwords.add('game')
+
+for game in game_list:
+    wc = wordcloud.WordCloud(width=800, height=600, background_color='white', max_words=100, stopwords=stopwords)
+    wc.generate(text_dict[game])
+    wc.to_file(f'./result/{game}_wordcloud.png')
+```
+
+
+Generated Word Cloud Images
