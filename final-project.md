@@ -123,6 +123,8 @@ for game in game_list:
  
  Word Frequencies Results:
  
+ <img src="../assets/apex_word_freq.png" width="1000"/>
+ 
  
  
 ```python
