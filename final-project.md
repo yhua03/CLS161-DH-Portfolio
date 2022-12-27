@@ -22,7 +22,7 @@ Teamfight Tactics (TFT) is a strategy game developed and published by Riot Games
 
 **Valorant**
 
-
+Imported Libraries and Initial setup: 
 ``python
 import pandas as pd
 import wordcloud
@@ -31,8 +31,10 @@ from matplotlib import pyplot as plt
 plt.rcParams["font.serif"] = "cmr10"
 ``
 
-**To define Game List**
+Defining Game Lists:
 ``python
 game_list = ['apex', 'cod', 'league', 'tft', 'valorant']
 game_list = ['apex']
 ``
+
+
