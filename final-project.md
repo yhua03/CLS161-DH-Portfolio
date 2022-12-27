@@ -25,24 +25,26 @@ Teamfight Tactics (TFT) is a strategy game developed and published by Riot Games
 Imported Libraries and Initial setup: 
 
 
-``python
+```python
 import pandas as pd
 import wordcloud
 import json
 from matplotlib import pyplot as plt
 plt.rcParams["font.serif"] = "cmr10"
-``
+```
 
 Defining Game Lists:
 
 
-``python
+```python
 game_list = ['apex', 'cod', 'league', 'tft', 'valorant']
 game_list = ['apex']
-``
+```
+
+
 Data Loading & Processing: 
 
-``python
+```python
 def process_dict(dict_list):
     text = ''
     
@@ -71,11 +73,11 @@ for game in game_list:
             data = json.load(f)
             text += process_dict(data)
     text_dict[game] = text
-``
+```
 
 Data Analysis & Visualization:
 
-``python
+```python
 n = 20
 stop_words = list(wordcloud.STOPWORDS)
 stop_words.extend(['I', '', 'This', 'The', 'It', 'You', 'A', 'And', 'I\'m', 'That', 'If', 'much', 'got', 'game'])
@@ -105,7 +107,7 @@ for game in game_list:
     plt.xticks(rotation=90)
     plt.title(f'{game} word frequency')
     plt.savefig(f'./result/{game}_word_freq.png')
- ``
+ ```
  
  Word Frequencies Results:
  
