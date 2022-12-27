@@ -23,6 +23,8 @@ Teamfight Tactics (TFT) is a strategy game developed and published by Riot Games
 **Valorant**
 
 Imported Libraries and Initial setup: 
+
+
 ``python
 import pandas as pd
 import wordcloud
@@ -32,9 +34,79 @@ plt.rcParams["font.serif"] = "cmr10"
 ``
 
 Defining Game Lists:
+
+
 ``python
 game_list = ['apex', 'cod', 'league', 'tft', 'valorant']
 game_list = ['apex']
 ``
+Data Loading & Processing: 
 
+``python
+def process_dict(dict_list):
+    text = ''
+    
+    while dict_list:
+        cur_dict = dict_list.pop(0)
+        
+        cur_data = cur_dict['data']
 
+        if 'body' in cur_data:
+            text += cur_data['body'] + ' '
+        
+        if 'children' in cur_data:
+            for child in cur_data['children']:
+                if type(child) == dict:
+                    dict_list.append(child)
+    
+    return text
+    
+text_dict = {}
+
+for game in game_list:
+    # read json file
+    text = ''
+    for i in range(1, 6):
+        with open(f'./data/{game}/{i}.json', 'r') as f:
+            data = json.load(f)
+            text += process_dict(data)
+    text_dict[game] = text
+``
+
+Data Analysis & Visualization:
+
+``python
+n = 20
+stop_words = list(wordcloud.STOPWORDS)
+stop_words.extend(['I', '', 'This', 'The', 'It', 'You', 'A', 'And', 'I\'m', 'That', 'If', 'much', 'got', 'game'])
+
+def word_freq(text):
+    word_list = text.split(' ')
+    word_dict = {}
+    for word in word_list:
+        if word in word_dict:
+            word_dict[word] += 1
+        else:
+            word_dict[word] = 1
+    return word_dict
+
+for game in game_list:
+    word_dict = word_freq(text_dict[game])
+    word_dict = sorted(word_dict.items(), key=lambda x: x[1], reverse=True)\
+    
+    # delete stop words from the word_dict
+    no_stopword = filter(lambda x: x[0] not in stop_words, word_dict)
+    word_dict = list(no_stopword)[:n]
+    word_dict = dict(word_dict)
+
+    # plot the top 20 words with pyplot
+    plt.figure(figsize=(10, 5))
+    plt.bar(word_dict.keys(), word_dict.values())
+    plt.xticks(rotation=90)
+    plt.title(f'{game} word frequency')
+    plt.savefig(f'./result/{game}_word_freq.png')
+ ``
+ 
+ Word Frequencies Results:
+ 
+ 
