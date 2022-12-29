@@ -123,9 +123,12 @@ for game in game_list:
  
  Word Frequencies Results:
  
-```python
+
 <img src="../assets/apex_word_freq.png" width="800"/>
-```
+<img src="../assets/cod_word_freq.png" width="800"/>
+<img src="../assets/league_word_freq.png" width="800"/>
+<img src="../assets/tft_word_freq.png" width="800"/>
+<img src="../assets/valorant_word_freq.png" width="800"/>
  
  
 ```python
@@ -143,3 +146,10 @@ for game in game_list:
 
 
 Generated Word Cloud Images
+
+
+<img src="../assets/apex_wordcloud.png" width="800"/>
+<img src="../assets/cod_wordcloud.png" width="800"/>
+<img src="../assets/league_wordcloud.png" width="800"/>
+<img src="../assets/tft_wordcloud.png" width="800"/>
+<img src="../assets/valorant_wordcloud.png" width="800"/>
