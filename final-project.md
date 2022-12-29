@@ -121,15 +121,30 @@ for game in game_list:
     plt.savefig(f'./result/{game}_word_freq.png')
  ```
  
- Word Frequencies Results:
+For each of the gaming communities and channels, I chose the top 5 trending threads and used the code above to analyze the discussion content through the perspective of speech frequencies. Below are the results of the python analysis for each of the channel, displayed as a bar chart and as word clouds. The Y-coordinate of the chart is the number of times that certain word has appeared under the selected threads, and the X-coordinate represents the word/phrases.
+
+**Word Frequencies Results**
  
 
 <img src="../assets/apex_word_freq.png" width="800"/>
+
+The most frequently appearing wrods under Apex Legend threads are Heirloom, make, see, people and one. A lot of the words are common transition words or verbs that does not have any unique connotation to the Apex Legends community. However, some words such as Heirloom is unique to Apex, as Heirlooms are Mythic-tier cosmetic items that change the skin of your melee weapon in Apex Legends.
+
 <img src="../assets/cod_word_freq.png" width="800"/>
+
+Interestingly, three of the most frequently appearing words under COD threads are blue, red and black. It seems that in the game of COD, the two teams playing against each other is represented in one of the two colors: blue or red. And since some of the past COD games are sold under the name Black Ops, that might explain the high frequencies of the word black as well. 
+
 <img src="../assets/league_word_freq.png" width="800"/>
+
+The most frequently appearing words under league of legends threads are even, hope, reall and Riot. I don't quite understand the connotation of even as it could be said as a transition word or as an adjective to show fairness, but it is intriguing that it's the most frequently appearing word. Also interestingly, it is odd that "hope" appears 14 times among discussions of League of Legends. Perhaps it is worth looking deeper into the actual content of the discussion to acquire a more accurate interpretation of these two words. Riot is an anticipated word that appears frequently, since the company behind League of Legends is called Riot Games. 
+
+
 <img src="../assets/tft_word_freq.png" width="800"/>
+
+For teamfight tactics, since the background of the game overlaps with League of Legends a lot, it is expected that some of the most frequently appearing words are common. For example, the word "even" is one of the most frequently appearing words here under TFT as well. Of course, there are multiple words on the list that are unique to the game, such as Yordles and Duo. 
+
+
 <img src="../assets/valorant_word_freq.png" width="800"/>
- 
  
 ```python
 # wordcloud generation
@@ -143,13 +158,17 @@ for game in game_list:
     wc.generate(text_dict[game])
     wc.to_file(f'./result/{game}_wordcloud.png')
 ```
+**
 
+**Generated Word Cloud Images**
 
-Generated Word Cloud Images
-
-
+Below are the word cloud images that I've genegerated based on the previous word frequencies analysis using Python (as shown above in the code)
 <img src="../assets/apex_wordcloud.png" width="800"/>
+
 <img src="../assets/cod_wordcloud.png" width="800"/>
+
 <img src="../assets/league_wordcloud.png" width="800"/>
+
 <img src="../assets/tft_wordcloud.png" width="800"/>
+
 <img src="../assets/valorant_wordcloud.png" width="800"/>
